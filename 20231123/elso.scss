@@ -1,0 +1,22 @@
+@import "colors";
+
+$myColor: red;
+
+h1 {
+  $myColor: green !global;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+#mydiv{
+    h1{
+        color: $myazul;
+    }
+
+    p {
+        @include important-text;
+    }
+}

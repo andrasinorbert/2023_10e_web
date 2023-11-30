@@ -1,0 +1,14 @@
+$myrot:red;
+$mygrun:grey;
+$myazul:blue;
+
+@mixin bordered($width, $color:black){
+    border: $width solid $color;
+}
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    @include bordered($width:5px);
+  }

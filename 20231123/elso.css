@@ -1,0 +1,17 @@
+h1 {
+  color: green;
+}
+
+p {
+  color: green;
+}
+
+#mydiv h1 {
+  color: blue;
+}
+#mydiv p {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 5px solid black;
+}/*# sourceMappingURL=elso.css.map */
