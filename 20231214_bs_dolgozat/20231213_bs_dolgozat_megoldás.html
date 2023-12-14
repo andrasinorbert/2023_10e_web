@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--
+A megoldások során csak annyit kell tennetek, hogy beírjátok a megfelelő classokat a megfelelő helyre!
+A html fájlt nevezd el az alábbiak alapján: osztaly_név_bs.html
+A megoldásodat küldd el az andrasi.norbert@gmail.com címre
+    Az üzenet tárgya az alábbi legyen: "[osztály] bootstrap név"
+
+    1) A grid system feladatait egy fluid konténeren belül oldd meg
+        az oszlopok reszponzívak legyenek az alábbiak alapján:
+            ekkora képernyő szélesség mellett      egymás mellett ennyi oszlop férhet el
+                    400px                                  2
+                    600px                                  3
+                    850px                                  4
+                    1300px                                 6
+
+        Készítsd el az alábbi módosításokat:
+            "cella" sora            "cella" oszlopa         módosítás
+                1                       3                       belső margó legyen 3-as nagyságú
+                1                       4                       legyen szegélye
+                1                       5                       háttérszín legyen sötét, betűszín fehér
+                2                       2                       középre igazított
+                2                       4                       jobbra igazított
+                2                       6                       uppercase betűs
+        
+    2) Formázd a táblázatot az alábbiak alapján
+        a táblázat legyen 
+            - bootstrap táblázat
+            - sötét
+            - csíkozott
+            - szegélyezett
+            - ha rávisszük az egeret egy sorára, akkor világosabb színnel emelje ki
+
+    3) Képek formázása:
+        1.png   lekeríkett sarkú (5ös erősség), középre igazított
+        2.png   jobbra igazított, ellipszis kivágással, szélessége 25%-a legyen az eredeti képhez képest
+        3.png   legyen thumbnail, és balra igazított
+-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop1</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop2</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 p-3">oszlop3</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 border">oszlop4</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 bg-dark text-white">oszlop5</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop6</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop1</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-center">oszlop2</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop3</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-end">oszlop4</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2">oszlop5</div>
+            <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-uppercase">oszlop6</div>
+        </div>
+    </div>
+    <table class="table table-dark table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>fejlec1</th>
+                <th>fejlec2</th>
+                <th>fejlec3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sor1oszlop01</td>
+                <td>sor2oszlop02</td>
+                <td>sor3oszlop03</td>
+            </tr>
+            <tr>
+                <td>sor1oszlop01</td>
+                <td>sor2oszlop02</td>
+                <td>sor3oszlop03</td>
+            </tr>
+            <tr>
+                <td>sor1oszlop01</td>
+                <td>sor2oszlop02</td>
+                <td>sor3oszlop03</td>
+            </tr>
+        </tbody>
+    </table>
+    <img class="rounded-5 mx-auto d-block" src="1.png">
+    <img class="rounded-circle float-end w-25" src="2.png">
+    <img class="img-thumbnail float-start" src="1.png">
+</body>
+</html>
